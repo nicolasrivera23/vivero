@@ -77,6 +77,20 @@ input{
     border-radius: 5px;
     border: 1px solid #2c3e50;
     font-size: 3vw;
+    transition: all 0.3s ease;
+}
+
+
+
+input::placeholder {
+    color: #95a5a6;
+    font-style: italic;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
 }
 textarea{
     width: 80%;
@@ -99,6 +113,34 @@ button{
     font-family: 'Roboto', sans-serif;
     font-size: 3vw;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #34495e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+#btnRegistrar {
+    background-color: #27ae60;
+}
+
+#btnRegistrar:hover {
+    background-color: #229954;
+}
+
+#btnRestablecer {
+    background-color: #e74c3c;
+}
+
+#btnRestablecer:hover {
+    background-color: #c0392b;
 }
 .contenedor-volver{
     display: flex;
@@ -138,6 +180,20 @@ div{
     background-color: #d1f4d2;
     border-radius: 10px;
     font-family: 'Roboto', sans-serif;
+    border: 2px solid #2c3e50;
+    transition: all 0.3s ease;
+}
+
+.mensaje.exito {
+    background-color: #d4edda;
+    border-color: #27ae60;
+    color: #155724;
+}
+
+.mensaje.error {
+    background-color: #f8d7da;
+    border-color: #e74c3c;
+    color: #721c24;
 }
 
 
